@@ -8,10 +8,10 @@
 </head>
 <body>
   <div id="app">
-    <header th:replace="~{/fragment/header.html}"></header>
-    <nav th:replace="~{/fragment/nav.html}"></nav>
+    <header th:replace="~{./fragment/header.html}"></header>
+    <nav th:replace="~{./fragment/nav.html}"></nav>
     <main>
-      <aside th:replace="~{/fragment/aside.html}"></aside>
+      <aside th:replace="~{./fragment/aside.html}"></aside>
       <section>
         <form action="/memo/write" method="post">
           <div class="mb-3 mt-3">
@@ -29,9 +29,9 @@
           <button class="btn btn-primary">작성</button>
         </form>
       </section>
-      <aside th:replace="~{/fragment/aside.html}"></aside>
+      <aside th:replace="~{./fragment/aside.html}"></aside>
     </main>
-    <footer th:replace="~{/fragment/footer.html}"></footer>
+    <footer th:replace="~{./fragment/footer.html}"></footer>
   </div>
 </body>
 </html>
